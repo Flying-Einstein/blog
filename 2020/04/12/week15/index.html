@@ -17,7 +17,7 @@
 <meta property="og:image" content="http://iamlay.com/week1501.jpg">
 <meta property="og:image" content="http://iamlay.com/week1502.jpg">
 <meta property="article:published_time" content="2020-04-12T11:55:37.000Z">
-<meta property="article:modified_time" content="2020-04-12T12:24:26.000Z">
+<meta property="article:modified_time" content="2023-03-22T05:23:04.184Z">
 <meta property="article:author" content="Ray">
 <meta property="article:tag" content="转载">
 <meta name="twitter:card" content="summary">
@@ -99,6 +99,7 @@
         <h3 id="Part01-什么是AOP"><a href="#Part01-什么是AOP" class="headerlink" title="Part01-什么是AOP?"></a>Part01-什么是AOP?</h3><blockquote>
 <p>面向切面的程序设计（Aspect-oriented programming，AOP，又译作面向方面的程序设计、剖面导向程序设计）是计算机科学中的一种程序设计思想，旨在将横切关注点与业务主体进行进一步分离，以提高程序代码的模块化程度。通过在现有代码基础上增加额外的通知（Advice）机制，能够对被声明为“切点（Pointcut）”的代码块进行统一管理与装饰，如“对所有方法名以‘set*’开头的方法添加后台日志”。该思想使得开发人员能够将与代码核心业务逻辑关系不那么密切的功能（如日志功能）添加至程序中，同时又不降低业务代码的可读性。</p>
 </blockquote>
+<p>&lt;!−− more −−&gt;</p>
 <h3 id="Part02-AOP一个使用场景：埋点"><a href="#Part02-AOP一个使用场景：埋点" class="headerlink" title="Part02-AOP一个使用场景：埋点"></a>Part02-AOP一个使用场景：埋点</h3><p>互联网进入到下半场，用户也由增量进入到存量时代。通过统计用户操作行为了解用户的偏好，结合大数据分析，可以方便公司更加合理的作出决策更好的吸引客户、留住客户。对任何一个主流的APP来讲，都会存在大量的埋点来统计用户的行为。埋点功能不属于业务逻辑，埋点代码和业务代码混合在一块会严重污染业务代码，且埋点的代码会分散到整个工程。面向切面编程是解决这种问题一个很好的方案，其原理就是在不更改正常业务处理流程的前提下，动态生成一个代理类，从而实现对目标对象嵌入附加的操作。</p>
 <h3 id="Part03-iOS实现AOP的原理"><a href="#Part03-iOS实现AOP的原理" class="headerlink" title="Part03-iOS实现AOP的原理"></a>Part03-iOS实现AOP的原理</h3><p>利用OC的动态性，通过wizzling method 改变目标函数的 selector 所指向的实现，然后在新的实现中实现附加的操作，完成之后再回到原来的处理逻辑。OC是一门动态语言，在OC中执行一个方法的时候实际上是在发送一条消息给接受对象<code>[receiver message]</code>。完整的过程是根据<code>message</code>生成一个选择子<code>selector</code>，然后根据<code>selector</code>找到指向函数的的具体的实现的指针<code>IMP</code>，然后找到真正的函数执行逻辑。OC的这种处理流程为我们动态修改函数的实现提供了可能，在运行时，只要我们改变selector和IMP的对应关系，我们就可以在执行<code>[receiver message]</code>时进入到新的函数实现。</p>
 <h3 id="Part04-iOS实现AOP的一个成熟的开源框架：Aspects"><a href="#Part04-iOS实现AOP的一个成熟的开源框架：Aspects" class="headerlink" title="Part04- iOS实现AOP的一个成熟的开源框架：Aspects"></a>Part04- iOS实现AOP的一个成熟的开源框架：Aspects</h3><h4 id="Aspects的实现思路"><a href="#Aspects的实现思路" class="headerlink" title="Aspects的实现思路"></a>Aspects的实现思路</h4><p>Aspects是利用 oc 自己的消息转发机制进行转发，在解释这个过程之前，我们先看一下消息是怎么找到对应的IMP的<img src="/week1501.jpg" alt="image"></p>
@@ -135,7 +136,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/04/12/week15/" data-id="clfj8cp2s001zfbf32q391ye7" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/04/12/week15/" data-id="clfj8oh21001zp6f3gd2j0ld4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>

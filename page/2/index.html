@@ -99,7 +99,7 @@
 <li>Button的title能够跟自动转换成设备手机选择的Language</li>
 <li>支持配置圆角以满足你自己UI的风格（iOS、MacOS、Web）</li>
 </ol>
-<p>对开发者而言，可以看这些使用引导<a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidbutton">ASAuthorizationAppleIDButton</a> (iOS, macOS, and tvOS), <a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton">WKInterfaceAuthorizationAppleIDButton</a> (watchOS), and <a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/signinwithapplejs/displaying_and_configuring_sign_in_with_apple_buttons">Displaying and Configuring Sign in with Apple Buttons</a> (web).</p>
+<p>&lt;!−− more −−&gt;<br>对开发者而言，可以看这些使用引导<a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/authenticationservices/asauthorizationappleidbutton">ASAuthorizationAppleIDButton</a> (iOS, macOS, and tvOS), <a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/watchkit/wkinterfaceauthorizationappleidbutton">WKInterfaceAuthorizationAppleIDButton</a> (watchOS), and <a target="_blank" rel="noopener" href="https://developer.apple.com/documentation/signinwithapplejs/displaying_and_configuring_sign_in_with_apple_buttons">Displaying and Configuring Sign in with Apple Buttons</a> (web).</p>
 <p>系统提供的Button 的Title有几种文案。根据你使用的平台，选择最合适的文案。</p>
 <p>下面几种Button Title都可以在iOS、macOS、和tvOS中使用，但是只有Sign in with Apple 和 Continue with Apple 可以在Web中使用</p>
 <p><img src="/SignWithApple01.png"></p>
@@ -178,7 +178,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/04/19/week16/" data-id="clfj8cp2t0022fbf36ejs7gq3" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/04/19/week16/" data-id="clfj8oh25002fp6f3f670a4sx" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -219,6 +219,7 @@
         <h3 id="Part01-获取objc-runtime的源码"><a href="#Part01-获取objc-runtime的源码" class="headerlink" title="Part01-获取objc-runtime的源码"></a>Part01-获取objc-runtime的源码</h3><p><a target="_blank" rel="noopener" href="https://opensource.apple.com/tarballs/objc4/">objc-runtime的源码地址</a></p>
 <p>注意：⚠️⚠️⚠️，objc-runtime的源码的新旧程度并不是按照时间进行排序，而是按照包的大小进行的排序，一般可以理解为包最大的即为最新的源码</p>
 <p>但是官网的runtime代码是无法直接运行的，如果想直接运行可以下载<a target="_blank" rel="noopener" href="https://github.com/RetVal">RetVal</a>处理过的<a target="_blank" rel="noopener" href="https://github.com/RetVal/objc-runtime">源代码</a></p>
+<p>&lt;!−− more −−&gt;</p>
 <h3 id="Part02-将OC代码编译成C-代码"><a href="#Part02-将OC代码编译成C-代码" class="headerlink" title="Part02-将OC代码编译成C++代码"></a>Part02-将OC代码编译成C++代码</h3><ol>
 <li>找到需要编译成C++代码的OC文件，这里我们拿<code>main.m</code>来举例</li>
 </ol>
@@ -242,7 +243,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/04/13/OCCodeAnalysis/" data-id="clfj8cp2l0017fbf316oec4zz" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/04/13/OCCodeAnalysis/" data-id="clfj8oh1t0016p6f3geij73nu" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -283,6 +284,7 @@
         <h3 id="Part01-什么是AOP"><a href="#Part01-什么是AOP" class="headerlink" title="Part01-什么是AOP?"></a>Part01-什么是AOP?</h3><blockquote>
 <p>面向切面的程序设计（Aspect-oriented programming，AOP，又译作面向方面的程序设计、剖面导向程序设计）是计算机科学中的一种程序设计思想，旨在将横切关注点与业务主体进行进一步分离，以提高程序代码的模块化程度。通过在现有代码基础上增加额外的通知（Advice）机制，能够对被声明为“切点（Pointcut）”的代码块进行统一管理与装饰，如“对所有方法名以‘set*’开头的方法添加后台日志”。该思想使得开发人员能够将与代码核心业务逻辑关系不那么密切的功能（如日志功能）添加至程序中，同时又不降低业务代码的可读性。</p>
 </blockquote>
+<p>&lt;!−− more −−&gt;</p>
 <h3 id="Part02-AOP一个使用场景：埋点"><a href="#Part02-AOP一个使用场景：埋点" class="headerlink" title="Part02-AOP一个使用场景：埋点"></a>Part02-AOP一个使用场景：埋点</h3><p>互联网进入到下半场，用户也由增量进入到存量时代。通过统计用户操作行为了解用户的偏好，结合大数据分析，可以方便公司更加合理的作出决策更好的吸引客户、留住客户。对任何一个主流的APP来讲，都会存在大量的埋点来统计用户的行为。埋点功能不属于业务逻辑，埋点代码和业务代码混合在一块会严重污染业务代码，且埋点的代码会分散到整个工程。面向切面编程是解决这种问题一个很好的方案，其原理就是在不更改正常业务处理流程的前提下，动态生成一个代理类，从而实现对目标对象嵌入附加的操作。</p>
 <h3 id="Part03-iOS实现AOP的原理"><a href="#Part03-iOS实现AOP的原理" class="headerlink" title="Part03-iOS实现AOP的原理"></a>Part03-iOS实现AOP的原理</h3><p>利用OC的动态性，通过wizzling method 改变目标函数的 selector 所指向的实现，然后在新的实现中实现附加的操作，完成之后再回到原来的处理逻辑。OC是一门动态语言，在OC中执行一个方法的时候实际上是在发送一条消息给接受对象<code>[receiver message]</code>。完整的过程是根据<code>message</code>生成一个选择子<code>selector</code>，然后根据<code>selector</code>找到指向函数的的具体的实现的指针<code>IMP</code>，然后找到真正的函数执行逻辑。OC的这种处理流程为我们动态修改函数的实现提供了可能，在运行时，只要我们改变selector和IMP的对应关系，我们就可以在执行<code>[receiver message]</code>时进入到新的函数实现。</p>
 <h3 id="Part04-iOS实现AOP的一个成熟的开源框架：Aspects"><a href="#Part04-iOS实现AOP的一个成熟的开源框架：Aspects" class="headerlink" title="Part04- iOS实现AOP的一个成熟的开源框架：Aspects"></a>Part04- iOS实现AOP的一个成熟的开源框架：Aspects</h3><h4 id="Aspects的实现思路"><a href="#Aspects的实现思路" class="headerlink" title="Aspects的实现思路"></a>Aspects的实现思路</h4><p>Aspects是利用 oc 自己的消息转发机制进行转发，在解释这个过程之前，我们先看一下消息是怎么找到对应的IMP的<img src="/week1501.jpg" alt="image"></p>
@@ -319,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/04/12/week15/" data-id="clfj8cp2s001zfbf32q391ye7" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/04/12/week15/" data-id="clfj8oh21001zp6f3gd2j0ld4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>
@@ -370,7 +372,7 @@
 <blockquote>
 <p>高级编程语言是高度封装了的编程语言，与低级语言相对。它是以人类的日常语言为基础的一种编程语言，使用一般人易于接受的文字来表示，有较高的可读性，以方便对电脑认知较浅的人亦可以大概明白其内容。比如：C、C++、Swift、Java…</p>
 </blockquote>
-<p>用一张图来解释这三种语言之间的关系：</p>
+<p>&lt;!−− more −−&gt;<br>用一张图来解释这三种语言之间的关系：</p>
 <p><img src="/Assembly01.png" alt="image"></p>
 <h4 id="Part02-编译器：LLVM"><a href="#Part02-编译器：LLVM" class="headerlink" title="Part02 - 编译器：LLVM"></a>Part02 - 编译器：LLVM</h4><p>汇编严重依赖硬件设备, <code>iOS</code>模拟器使用<code>AT&amp;T</code>格式汇编(因为 <code>Mac</code> 是基于 <code>Unix</code> 开发的), <code>iOS</code> 真机使用ARM汇编<br>。</p>
 <p><code>Xcode</code>内置的编译器是<code>LLVM</code>，<code>LLVM</code> 是一个著名的编译器, 由大神 <code>Chris Lattner </code>开发, 可用于常规编译器, JIT编译器, 汇编器, 调试器, 静态分析工具等一系列跟编程语言相关的工作。</p>
@@ -758,7 +760,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/04/02/week14/" data-id="clfj8cp2r001wfbf3eun2b7xu" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/04/02/week14/" data-id="clfj8oh20001wp6f36f1j43i3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -797,6 +799,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h5 id="为什么要写博客？"><a href="#为什么要写博客？" class="headerlink" title="为什么要写博客？"></a>为什么要写博客？</h5><p>写博客是一个输出和分享的过程，将会对博主本人和读者产生积极的影响。为了保证输出对读者存在价值，首先需要确保博客内容的准确性，即不要输出错误的内容误导读者；要保证博客内容的逻辑性，即会使让读者读起来有云里雾里的感觉。为了达到这样的效果，就要求博主对分享的知识有足够深刻的理解，并能够转化为自己的语言分享出来。高质量的博客，对博主和读者而言，是一种双赢的结果。</p>
+<p>&lt;!−− more −−&gt;</p>
 <h5 id="为什么没有养成持续以恒的习惯？"><a href="#为什么没有养成持续以恒的习惯？" class="headerlink" title="为什么没有养成持续以恒的习惯？"></a>为什么没有养成持续以恒的习惯？</h5><p>工作四年半的时间，写博客一直以来都处于养鱼的状态，没有养成持之以恒的习惯，非常惭愧。除了开始工作的那段时间有比较高的热情，接下来的几年基本放弃，总结下来，大概有下面几点原因：</p>
 <ul>
 <li><input checked disabled type="checkbox"> 刚开始工作，出生牛犊不怕虎，不怕嘲笑。工作一段时间，深感技术不足，以后畏首畏尾。</li>
@@ -833,7 +836,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/03/29/week13/" data-id="clfj8cp2q001tfbf3cw982lk5" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/03/29/week13/" data-id="clfj8oh1z001tp6f3bg6g98i3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -874,6 +877,7 @@
         <h4 id="什么是摘要？"><a href="#什么是摘要？" class="headerlink" title="什么是摘要？"></a>什么是摘要？</h4><blockquote>
 <p> 摘要是简洁、具体的摘要要反映论文的实质性内容，展示论文内容足够的信息，体现论文的创新性，展现论文的重要梗概，一般由具体研究的对象、方法、结果、结论四要素组成。</p>
 </blockquote>
+<p>&lt;!−− more −−&gt;</p>
 <h4 id="为什么要添加文章摘要？"><a href="#为什么要添加文章摘要？" class="headerlink" title="为什么要添加文章摘要？"></a>为什么要添加文章摘要？</h4><ol>
 <li>我们写的每一篇技术博客，都应该有文章摘要，用简短的文字来交代该篇博客的写作背景、遇到的问题、是否解决、采取的方法。通过阅读文章摘要，读者就应该大致能够判断该篇文章对自己是否存在价值，避免把宝贵的时间浪费在没有意义的文章上。</li>
 <li>Hexo写作的文章默认的编辑模式是全文模式，如果采用全文模式来写文章，在浏览整个网站的过程中将会把非常多的时间浪费在滑动屏幕这种没有价值的事情上。对读者而言，这是一个相当不友好的体验，而且会分散读者的注意力。</li>
@@ -900,7 +904,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/03/27/HexoNextReadmore/" data-id="clfj8cp2a000cfbf3hgjihef2" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/03/27/HexoNextReadmore/" data-id="clfj8oh1i000cp6f3ekuralwm" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -950,7 +954,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/03/24/HexoNextTheme/" data-id="clfj8cp2d000kfbf3g69k6f1h" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/03/24/HexoNextTheme/" data-id="clfj8oh1k000hp6f32oyre7us" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -997,7 +1001,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2020/03/21/InstallTomcat/" data-id="clfj8cp2c000hfbf364pm2mi3" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2020/03/21/InstallTomcat/" data-id="clfj8oh1l000kp6f377rf674c" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>
@@ -1045,7 +1049,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2019/03/21/Encrypt/" data-id="clfj8cp240004fbf362wsbtso" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2019/03/21/Encrypt/" data-id="clfj8oh1d0005p6f3cjxnfqmq" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8E%9F%E5%88%9B/" rel="tag">原创</a></li></ul>
@@ -1097,7 +1101,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://iamlay.com/2019/03/21/cocoapodsVisual/" data-id="clfj8cp2p001nfbf39l1lcrz9" class="article-share-link">Share</a>
+      <a data-url="http://iamlay.com/2019/03/21/cocoapodsVisual/" data-id="clfj8oh1y001np6f35ezneket" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag">转载</a></li></ul>
