@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="在开发的过程中很多功能模块可能会在同一个App的不同的业务模块出现，也可能在不同的App出现，为了提高我们的开发效率，我们应该将普遍使用的功能模块封装成组件，并通过Cocoapods来管理  利用pod trunk发布程序">
 <meta property="og:type" content="article">
@@ -180,10 +180,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -288,13 +288,13 @@
         <blockquote>
 <p>在开发的过程中很多功能模块可能会在同一个App的不同的业务模块出现，也可能在不同的App出现，为了提高我们的开发效率，我们应该将普遍使用的功能模块封装成组件，并通过Cocoapods来管理</p>
 </blockquote>
-<p><a target="_blank" rel="noopener" href="https://cyrill.win/articles/2016/12/04/pod-trunk">利用pod trunk发布程序</a></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9jeXJpbGwud2luL2FydGljbGVzLzIwMTYvMTIvMDQvcG9kLXRydW5r">利用pod trunk发布程序<i class="fa fa-external-link-alt"></i></span></p>
 <span id="more"></span>
 
 <h3 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pod trunk register 邮箱 &#x27;用户名&#x27; --description=&#x27;电脑描述&#x27;</span><br></pre></td></tr></table></figure>
 <h3 id="查收邮件"><a href="#查收邮件" class="headerlink" title="查收邮件"></a>查收邮件</h3><ul>
 <li>如果是QQ邮箱，可能会被放到“垃圾箱”中，并不一定是“收件箱”</li>
-<li>点击邮件中的链接： <a target="_blank" rel="noopener" href="https://trunk.cocoapods.org/sessions/verify/xxxx">https://trunk.cocoapods.org/sessions/verify/xxxx</a></li>
+<li>点击邮件中的链接： <span class="exturl" data-url="aHR0cHM6Ly90cnVuay5jb2NvYXBvZHMub3JnL3Nlc3Npb25zL3ZlcmlmeS94eHh4">https://trunk.cocoapods.org/sessions/verify/xxxx<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
 <h3 id="查看个人信息"><a href="#查看个人信息" class="headerlink" title="查看个人信息"></a>查看个人信息</h3><ul>
 <li>pod trunk me</li>
@@ -386,7 +386,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>

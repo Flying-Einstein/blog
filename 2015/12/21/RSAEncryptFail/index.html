@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="前言：前段时间做RSA加密的时候，在调试的过程中，经常失败，后台接收到的加密参数为空，但是这种不是经常发生，而是随机的。经过测试，发现，这种情况在单独使用真机、模拟器的时候都不发生，只有在真机连接xcode进行调试的时候才会发生。">
 <meta property="og:type" content="article">
@@ -185,10 +185,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -299,13 +299,13 @@
 <p>问题就出在：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">OSStatus status = SecItemAdd((__bridge CFDictionaryRef)publicKey, &amp;persistKey);</span><br></pre></td></tr></table></figure>
 
-<p>在<a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/20344255/secitemadd-and-secitemcopymatching-returns-error-code-34018-errsecmissingentit">stack overflow</a>发现有的人也遇到了类似的问题，现总问题结如下：</p>
+<p>在<span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMjAzNDQyNTUvc2VjaXRlbWFkZC1hbmQtc2VjaXRlbWNvcHltYXRjaGluZy1yZXR1cm5zLWVycm9yLWNvZGUtMzQwMTgtZXJyc2VjbWlzc2luZ2VudGl0">stack overflow<i class="fa fa-external-link-alt"></i></span>发现有的人也遇到了类似的问题，现总问题结如下：</p>
 <blockquote>
 <p>1.当我在连接着Xcode的真机设备上运行app的时候,我试图获取钥匙串，却由于-34018的错误导致运行失败。缺乏钥匙串错误代码开发文档，而且也很难重现此错误(发生的概率大概30%，我也不知道为什么发生)。由于缺乏相关的文档，所以调试这种错误就变得非常困难。为什么会出现此错误，如何解决？xcode5、ios7</p>
 </blockquote>
 <h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><h5 id="方案一："><a href="#方案一：" class="headerlink" title="方案一："></a>方案一：</h5><p>你不得不通过在你的test target中添加下面的代码作为运行脚本来签名你的 .xcttest文件夹</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">codesign --verify --force --sign &quot;$CODE_SIGN_IDENTITY&quot; &quot;$CODESIGNING_FOLDER_PATH&quot;</span><br></pre></td></tr></table></figure>
-<h5 id="方案二："><a href="#方案二：" class="headerlink" title="方案二："></a>方案二：</h5><p>在查看<a target="_blank" rel="noopener" href="https://opensource.apple.com/source/Security/Security-55471/sec/Security/">源码</a> 之后，我注意到钥匙串通过一种安全进程(区别于app的进程)获取。<br>app和<code>安全进程</code>通过一项称之为<a target="_blank" rel="noopener" href="https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingXPCServices.html">XPC</a>的技术进行<code>对话</code>。<code>安全进程</code>经由<code>XPC</code>的启动命令启动。你可以发现真机（模拟器也是如此）app的<code>安全进程</code>正在运行，它的父进程也已经启动。<br>我猜测，有可能某些未知的原因导致<code>安全进程</code>启动失败或者启动太慢，使得你使用它的时候还没有准备好。<br>或许，你可以考虑如何重启<code>安全进程</code>。</p>
+<h5 id="方案二："><a href="#方案二：" class="headerlink" title="方案二："></a>方案二：</h5><p>在查看<span class="exturl" data-url="aHR0cHM6Ly9vcGVuc291cmNlLmFwcGxlLmNvbS9zb3VyY2UvU2VjdXJpdHkvU2VjdXJpdHktNTU0NzEvc2VjL1NlY3VyaXR5Lw==">源码<i class="fa fa-external-link-alt"></i></span> 之后，我注意到钥匙串通过一种安全进程(区别于app的进程)获取。<br>app和<code>安全进程</code>通过一项称之为<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2xpYnJhcnkvYXJjaGl2ZS9kb2N1bWVudGF0aW9uL01hY09TWC9Db25jZXB0dWFsL0JQU3lzdGVtU3RhcnR1cC9DaGFwdGVycy9DcmVhdGluZ1hQQ1NlcnZpY2VzLmh0bWw=">XPC<i class="fa fa-external-link-alt"></i></span>的技术进行<code>对话</code>。<code>安全进程</code>经由<code>XPC</code>的启动命令启动。你可以发现真机（模拟器也是如此）app的<code>安全进程</code>正在运行，它的父进程也已经启动。<br>我猜测，有可能某些未知的原因导致<code>安全进程</code>启动失败或者启动太慢，使得你使用它的时候还没有准备好。<br>或许，你可以考虑如何重启<code>安全进程</code>。</p>
 <h5 id="来自苹果官方回复："><a href="#来自苹果官方回复：" class="headerlink" title="来自苹果官方回复："></a>来自苹果官方回复：</h5><p>1.我们终于能够在ios8.3里重现-34018错误，这是我们查找问题根源和修复问题的第一步。<br>可是，我们并不能给出确切的解决时间，但是由于已经影响了很多的开发者，我们也非常希望尽快解决。<br>作为变通方案，我建议在在didFinishLaunchingWithOptions 和applicationDidBecomeActive: 两个方法之前添加一个小的延时给获取字符串争取一点时间。然而，好像并没有明显的作用，这就意味着除了重启app确实没有更好的解决方法。<br>这个问题似乎和内存压力也有一定的关系，在解决这个问题的时候，要积极处理内存警告的问题</p>
 <h3 id="更新："><a href="#更新：" class="headerlink" title="更新："></a>更新：</h3><ul>
 <li>一些情况下是由于不正确的app签名造成的，你可以很清楚的辨别这种原因，因为它100%可以重现。</li>
@@ -372,7 +372,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>

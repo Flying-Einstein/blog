@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本文的大部分步骤参考的是一缕殇流化隐半边冰霜的博客，所以截图和很多步骤都是直接拷贝的该博客，然后补充了自己踩的一些坑。最后的脚本问题我没有拷贝过来，如果大家希望有所了解，可以去原博客，本文主要是个人以后回忆所用">
 <meta property="og:type" content="article">
@@ -201,10 +201,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -307,7 +307,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <blockquote>
-<p>本文的大部分步骤参考的是<a target="_blank" rel="noopener" href="https://halfrost.com/ios_jenkins/">一缕殇流化隐半边冰霜的博客</a>，所以截图和很多步骤都是直接拷贝的该博客，然后补充了自己踩的一些坑。最后的脚本问题我没有拷贝过来，如果大家希望有所了解，可以去原博客，本文主要是个人以后回忆所用</p>
+<p>本文的大部分步骤参考的是<span class="exturl" data-url="aHR0cHM6Ly9oYWxmcm9zdC5jb20vaW9zX2plbmtpbnMv">一缕殇流化隐半边冰霜的博客<i class="fa fa-external-link-alt"></i></span>，所以截图和很多步骤都是直接拷贝的该博客，然后补充了自己踩的一些坑。最后的脚本问题我没有拷贝过来，如果大家希望有所了解，可以去原博客，本文主要是个人以后回忆所用</p>
 </blockquote>
 <span id="more"></span>
 
@@ -320,7 +320,7 @@
 <li>任何时间、任何地点生成可部署的软件</li>
 <li>增强项目的可见性</li>
 </ol>
-<h3 id="环境准备步骤"><a href="#环境准备步骤" class="headerlink" title="环境准备步骤"></a>环境准备步骤</h3><p>现在我们来开始安装Jenkins。从<a target="_blank" rel="noopener" href="https://jenkins.io/zh/">官网</a> 上下载最新的pkg安装包。但是，这个时候直接安装是装不上的，Jenkins依赖于Java运行环境，因此需要首先安装<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/javase-jdk8-downloads.html">Java的SDK</a>。</p>
+<h3 id="环境准备步骤"><a href="#环境准备步骤" class="headerlink" title="环境准备步骤"></a>环境准备步骤</h3><p>现在我们来开始安装Jenkins。从<span class="exturl" data-url="aHR0cHM6Ly9qZW5raW5zLmlvL3poLw==">官网<i class="fa fa-external-link-alt"></i></span> 上下载最新的pkg安装包。但是，这个时候直接安装是装不上的，Jenkins依赖于Java运行环境，因此需要首先安装<span class="exturl" data-url="aHR0cHM6Ly93d3cub3JhY2xlLmNvbS9qYXZhL3RlY2hub2xvZ2llcy9qYXZhc2UtamRrOC1kb3dubG9hZHMuaHRtbA==">Java的SDK<i class="fa fa-external-link-alt"></i></span>。</p>
 <p>下载JAVA的SDK，并安装。安装完成后，打开终端，cd进入到jenkins.war包所在目录，执行以下命令：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -jar jenkins.war --httpPort=8080</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
@@ -369,7 +369,7 @@
 <p><img src="/jenkins20.png" alt="jenkins20.png"></p>
 <p>如果构建失败了，可以去查看Console Output可以查看log日志。</p>
 <p><img src="/jenkins21.png" alt="jenkins21.png"></p>
-<h3 id="Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充"><a href="#Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充" class="headerlink" title="Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充"></a>Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充</h3><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a target="_blank" rel="noopener" href="https://halfrost.com/ios_jenkins/">手把手教你利用 Jenkins 持续集成 iOS 项目</a></p>
+<h3 id="Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充"><a href="#Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充" class="headerlink" title="Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充"></a>Jenkins自动打包，断断续续持续了一年才成功，开始的时候一直失败，中间一段时间因为没有时间尝试，最近重新拾起来了。遇到的坑，我想起来的时候，会持续补充</h3><h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><span class="exturl" data-url="aHR0cHM6Ly9oYWxmcm9zdC5jb20vaW9zX2plbmtpbnMv">手把手教你利用 Jenkins 持续集成 iOS 项目<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -421,7 +421,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>

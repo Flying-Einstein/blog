@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="ReactiveCocoa是函数响应式编程框架，为程序中各种类型的事件提供了标准的接口来处理，使代码更加清晰。网上关于ReactiveCocoa资料不少，但是很多都含糊不清，对刚学习的人来说不是非常的实用。本片文章是笔者看到的一篇比较优秀的入门文章，原版是英文且需翻墙访问，所以做了翻译，希望对有刚接触ReactiveCocoa的人有些许帮助">
 <meta property="og:type" content="article">
@@ -191,10 +191,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -297,18 +297,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="Part-01-背景"><a href="#Part-01-背景" class="headerlink" title="Part-01 背景"></a>Part-01 背景</h3><p>作为一个iOS开发者，写的每一行代码都是对事件的反馈，像Button点击、网络请求、属性改变（KVO）、用户位置改变等。但是这些事件的处理采用的是Actions、delegate、KVO、回调等不同的方式。<a target="_blank" rel="noopener" href="https://github.com/ReactiveCocoa/ReactiveCocoa">ReactiveCocoa</a>针对不同的事件定义了的标准接口，这样不同的事件可以更容易链式调用、过滤、组合。</p>
-<p>ReactiveCocoa组合了一对编程范式：<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Functional_programming">函数式编程</a>：使用更高级别的函数，该函数用其他函数作为他的参数。<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Reactive_programming">响应式编程</a>:一种面向数据流和变化传播的声明式编程范式。所以，ReactiveCocoa也被称之为函数响应式编程框架。</p>
+        <h3 id="Part-01-背景"><a href="#Part-01-背景" class="headerlink" title="Part-01 背景"></a>Part-01 背景</h3><p>作为一个iOS开发者，写的每一行代码都是对事件的反馈，像Button点击、网络请求、属性改变（KVO）、用户位置改变等。但是这些事件的处理采用的是Actions、delegate、KVO、回调等不同的方式。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1JlYWN0aXZlQ29jb2EvUmVhY3RpdmVDb2NvYQ==">ReactiveCocoa<i class="fa fa-external-link-alt"></i></span>针对不同的事件定义了的标准接口，这样不同的事件可以更容易链式调用、过滤、组合。</p>
+<p>ReactiveCocoa组合了一对编程范式：<span class="exturl" data-url="aHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9GdW5jdGlvbmFsX3Byb2dyYW1taW5n">函数式编程<i class="fa fa-external-link-alt"></i></span>：使用更高级别的函数，该函数用其他函数作为他的参数。<span class="exturl" data-url="aHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9SZWFjdGl2ZV9wcm9ncmFtbWluZw==">响应式编程<i class="fa fa-external-link-alt"></i></span>:一种面向数据流和变化传播的声明式编程范式。所以，ReactiveCocoa也被称之为函数响应式编程框架。</p>
 <p>ReactiveCocoa教程马上开始，接下来的教程侧重点在实用价值，所以给出的是实操而不是长篇大论。</p>
 <span id="more"></span>
-<h3 id="Part-02-实践"><a href="#Part-02-实践" class="headerlink" title="Part-02 实践"></a>Part-02 实践</h3><h4 id="ReactivePlayground"><a href="#ReactivePlayground" class="headerlink" title="ReactivePlayground"></a>ReactivePlayground</h4><p>在接下来的整个ReactiveCocoa教程中，我们将通过ReactivePlayground这个应用来逐步引入响应式编程。下载<a target="_blank" rel="noopener" href="https://koenig-media.raywenderlich.com/uploads/2014/01/ReactivePlayground-Starter.zip">ReactivePlayground工程</a>，确保可以正常的build和run.</p>
+<h3 id="Part-02-实践"><a href="#Part-02-实践" class="headerlink" title="Part-02 实践"></a>Part-02 实践</h3><h4 id="ReactivePlayground"><a href="#ReactivePlayground" class="headerlink" title="ReactivePlayground"></a>ReactivePlayground</h4><p>在接下来的整个ReactiveCocoa教程中，我们将通过ReactivePlayground这个应用来逐步引入响应式编程。下载<span class="exturl" data-url="aHR0cHM6Ly9rb2VuaWctbWVkaWEucmF5d2VuZGVybGljaC5jb20vdXBsb2Fkcy8yMDE0LzAxL1JlYWN0aXZlUGxheWdyb3VuZC1TdGFydGVyLnppcA==">ReactivePlayground工程<i class="fa fa-external-link-alt"></i></span>，确保可以正常的build和run.</p>
 <p>ReactivePlaygroun是一款非常简单的应用，主要就是给用户展示了一个登录的页面。输入用户的账号和密码，验证通过之后，进入到一个有一只可爱猫咪的页面。</p>
 <p><img src="/./week1901.jpg" alt="Alt text"></p>
 <p>打开工程，找到  <strong>RWViewController.m</strong>文件，你花费多久的时间可以找到<strong>Sign In</strong> Button变成enabing状态所需要的条件？展示&#x2F;隐藏 <strong>signInFaulure</strong> Label的规则是什么？ 也许，你花费两三分钟的时间就可以回答这些问题，但是当你面对更加复杂的项目的时候，你分析同样的问题可能就会花费相当长的时间。</p>
 <p>这就是ReactiveCocoa的优势所在，ReactiveCocoa能够让应用程序的基本意图变得更加清晰。那让我们开始我们的工作吧！！！</p>
-<h4 id="添加ReactiveCocoa框架"><a href="#添加ReactiveCocoa框架" class="headerlink" title="添加ReactiveCocoa框架"></a>添加ReactiveCocoa框架</h4><p>最方便的方式就是通过<a target="_blank" rel="noopener" href="http://cocoapods.org/">CocoaPods.</a>的方式导入框架。如果在此之前你没有使用过<a target="_blank" rel="noopener" href="http://cocoapods.org/">CocoaPods.</a>，可以按照本网站的<a target="_blank" rel="noopener" href="https://www.raywenderlich.com/?p=12139">CocoaPods 入门教程</a>进行操作，或者至少通过该教程的初始步骤进行操作，以便安装必备的组件。</p>
+<h4 id="添加ReactiveCocoa框架"><a href="#添加ReactiveCocoa框架" class="headerlink" title="添加ReactiveCocoa框架"></a>添加ReactiveCocoa框架</h4><p>最方便的方式就是通过<span class="exturl" data-url="aHR0cDovL2NvY29hcG9kcy5vcmcv">CocoaPods.<i class="fa fa-external-link-alt"></i></span>的方式导入框架。如果在此之前你没有使用过<span class="exturl" data-url="aHR0cDovL2NvY29hcG9kcy5vcmcv">CocoaPods.<i class="fa fa-external-link-alt"></i></span>，可以按照本网站的<span class="exturl" data-url="aHR0cHM6Ly93d3cucmF5d2VuZGVybGljaC5jb20vP3A9MTIxMzk=">CocoaPods 入门教程<i class="fa fa-external-link-alt"></i></span>进行操作，或者至少通过该教程的初始步骤进行操作，以便安装必备的组件。</p>
 <blockquote>
-<p>如果因为某些原因你不想引入CocoaPods，你仍旧可以通过其他的方式使用ReactiveCocoa。可以参考Github上面的<a target="_blank" rel="noopener" href="https://github.com/ReactiveCocoa/ReactiveCocoa#importing-reactivecocoa">引入ReactiveCocoa</a>文档，一步步操作。</p>
+<p>如果因为某些原因你不想引入CocoaPods，你仍旧可以通过其他的方式使用ReactiveCocoa。可以参考Github上面的<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1JlYWN0aXZlQ29jb2EvUmVhY3RpdmVDb2NvYSNpbXBvcnRpbmctcmVhY3RpdmVjb2NvYQ==">引入ReactiveCocoa<i class="fa fa-external-link-alt"></i></span>文档，一步步操作。</p>
 </blockquote>
 <p>打开终端，进入到下载工程的根目录，执行下面的指令创建Podfile文件；</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">touch Podfile</span><br><span class="line">open -e Podfile</span><br><span class="line"></span><br></pre></td></tr></table></figure>
@@ -341,7 +341,7 @@
 <p>上图可以看到，<code>rac_textSignal</code>是事件的初始来源，数据流通过一个<code>filter</code>过滤,该<code>filter</code>仅允许字符长度大于等于3的事件通过。该管道的最后一步是<code>subscribeNext:</code>,在这一步可以通过block打印事件的值。</p>
 <p>这里需要注意的一点是，<code>filter</code>的返回值也是<code>RACSignal</code>,可以通过下面的方式揭示管道的执行过程：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">RACSignal *usernameSourceSignal = </span><br><span class="line">    self.usernameTextField.rac_textSignal;</span><br><span class="line"></span><br><span class="line">RACSignal *filteredUsername = [usernameSourceSignal  </span><br><span class="line">  filter:^BOOL(id value) &#123;</span><br><span class="line">    NSString *text = value;</span><br><span class="line">    return text.length &gt; 3;</span><br><span class="line">  &#125;];</span><br><span class="line"></span><br><span class="line">[filteredUsername subscribeNext:^(id x) &#123;</span><br><span class="line">  NSLog(@&quot;%@&quot;, x);</span><br><span class="line">&#125;];</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>因为在<code>RACSignal</code>执行的每一种操作符返回还是<code>RACSignal</code>,因此也被称为<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Fluent_interface">fluentinterface</a>。该功能可以使你构造管道，而无需用局部变量引用每个步骤。<br>    &gt; Note: ReacticeCocoa使用了大量的blocks。如果你之前没有接触过block,你应该先看看Apple的<a target="_blank" rel="noopener" href="https://developer.apple.com/library/ios/documentation/cocoa/Conceptual/Blocks/Articles/00_Introduction.html">Blocks Programming Topics</a>,如果你像我一样对block很熟悉，但是对语法有点疑惑的话，可以访问<a target="_blank" rel="noopener" href="http://fuckingblocksyntax.com/">http://fuckingblocksyntax.com/</a>来巩固下你的知识。</p>
+<p>因为在<code>RACSignal</code>执行的每一种操作符返回还是<code>RACSignal</code>,因此也被称为<span class="exturl" data-url="aHR0cDovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9GbHVlbnRfaW50ZXJmYWNl">fluentinterface<i class="fa fa-external-link-alt"></i></span>。该功能可以使你构造管道，而无需用局部变量引用每个步骤。<br>    &gt; Note: ReacticeCocoa使用了大量的blocks。如果你之前没有接触过block,你应该先看看Apple的<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2xpYnJhcnkvaW9zL2RvY3VtZW50YXRpb24vY29jb2EvQ29uY2VwdHVhbC9CbG9ja3MvQXJ0aWNsZXMvMDBfSW50cm9kdWN0aW9uLmh0bWw=">Blocks Programming Topics<i class="fa fa-external-link-alt"></i></span>,如果你像我一样对block很熟悉，但是对语法有点疑惑的话，可以访问<span class="exturl" data-url="aHR0cDovL2Z1Y2tpbmdibG9ja3N5bnRheC5jb20v">http://fuckingblocksyntax.com/<i class="fa fa-external-link-alt"></i></span>来巩固下你的知识。</p>
 <p>####隐式转换</p>
 <p>将之前的拆分的代码恢复成流式语法：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[[self.usernameTextField.rac_textSignal</span><br><span class="line">  filter:^BOOL(id value) &#123;</span><br><span class="line">    NSString *text = value; // implicit cast</span><br><span class="line">    return text.length &gt; 3;</span><br><span class="line">  &#125;]</span><br><span class="line">  subscribeNext:^(id x) &#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;, x);</span><br><span class="line">  &#125;];</span><br></pre></td></tr></table></figure>
@@ -451,8 +451,8 @@
 <p>希望本教程已经给你一个良好的基础，这将有助于你在自己的应用程序中使用ReactiveCocoa框架。熟悉这些概念可能需要多加练习，但与任何语言或程序一样，一旦你找到它的窍门，它真的很简单。ReactiveCocoa的核心是信号，它们只不过是事件流。还有什么比这更简单的呢？</p>
 <p>对于ReactiveCocoa，我发现的有趣的事情之一是有许多方法可以解决同样的问题。你可以通过这个应用程序练习，通过调整信号和管道，以更改它们拆分和组合的方式。</p>
 <p>ReactiveCocoa的主要目标是使代码更简洁、更易于理解。就个人而言，我发现，如果应用程序的逻辑表示为清晰的管道，使用流畅的语法，则更容易理解应用程序的作用。</p>
-<p>在本教程系列的<a target="_blank" rel="noopener" href="https://www.raywenderlich.com/?p=62796">第二部分中</a>，你将了解更高级的主题，如错误处理以及如何管理在不同线程上执行的代码。</p>
-<h3 id="Part-03-原文"><a href="#Part-03-原文" class="headerlink" title="Part-03 原文"></a>Part-03 原文</h3><p><a target="_blank" rel="noopener" href="https://www.raywenderlich.com/2493-reactivecocoa-tutorial-the-definitive-introduction-part-1-2">ReactiveCocoa Tutorial – The Definitive Introduction: Part 1&#x2F;2</a></p>
+<p>在本教程系列的<span class="exturl" data-url="aHR0cHM6Ly93d3cucmF5d2VuZGVybGljaC5jb20vP3A9NjI3OTY=">第二部分中<i class="fa fa-external-link-alt"></i></span>，你将了解更高级的主题，如错误处理以及如何管理在不同线程上执行的代码。</p>
+<h3 id="Part-03-原文"><a href="#Part-03-原文" class="headerlink" title="Part-03 原文"></a>Part-03 原文</h3><p><span class="exturl" data-url="aHR0cHM6Ly93d3cucmF5d2VuZGVybGljaC5jb20vMjQ5My1yZWFjdGl2ZWNvY29hLXR1dG9yaWFsLXRoZS1kZWZpbml0aXZlLWludHJvZHVjdGlvbi1wYXJ0LTEtMg==">ReactiveCocoa Tutorial – The Definitive Introduction: Part 1&#x2F;2<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -504,7 +504,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>

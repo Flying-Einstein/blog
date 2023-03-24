@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="本文主要对iOS开发中需要注意的命名规范、语法规范、注释规范做的总结">
 <meta property="og:type" content="article">
@@ -180,10 +180,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -466,7 +466,7 @@
 <li>方法之间应该正好空一行，这有助于视觉清晰度和代码组织性。在方法中的功能块之间应该使用空白分开，但往往可能应该创建一个新的方法。</li>
 <li><code>@synthesize</code> 和 <code>@dynamic </code>在实现中每个都应该占一个新行。</li>
 </ul>
-<h5 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h5><p>条件判断主体部分应该始终使用大括号括住来防止出错，即使它可以不用大括号（例如它只需要一行）。这些错误包括添加第二行（代码）并希望它是 if 语句的一部分时。还有另外一种<a target="_blank" rel="noopener" href="http://programmers.stackexchange.com/a/16530">更危险的</a>，当 if 语句里面的一行被注释掉，下一行就会在不经意间成为了这个 if 语句的一部分。此外，这种风格也更符合所有其他的条件判断，因此也更容易检查。</p>
+<h5 id="条件判断"><a href="#条件判断" class="headerlink" title="条件判断"></a>条件判断</h5><p>条件判断主体部分应该始终使用大括号括住来防止出错，即使它可以不用大括号（例如它只需要一行）。这些错误包括添加第二行（代码）并希望它是 if 语句的一部分时。还有另外一种<span class="exturl" data-url="aHR0cDovL3Byb2dyYW1tZXJzLnN0YWNrZXhjaGFuZ2UuY29tL2EvMTY1MzA=">更危险的<i class="fa fa-external-link-alt"></i></span>，当 if 语句里面的一行被注释掉，下一行就会在不经意间成为了这个 if 语句的一部分。此外，这种风格也更符合所有其他的条件判断，因此也更容易检查。</p>
 <p>推荐:</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (!error) &#123;</span><br><span class="line">    return success;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -495,7 +495,7 @@
 <p>推荐：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (void)setExampleText:(NSString *)text image:(UIImage *)image;</span><br></pre></td></tr></table></figure>
 
-<h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>变量名应该尽可能命名为描述性的。除了 <code>for() </code>循环外，其他情况都应该避免使用单字母的变量名。 星号表示指针属于变量，例如：<code>NSString *text </code>不要写成 <code>NSString* text </code>或者 <code>NSString * text</code> ，常量除外。 尽量定义属性来代替直接使用实例变量。除了初始化方法<code>（init， initWithCoder:，等）</code>， <code>dealloc</code> 方法和自定义的 <code>setters </code>和 <code>getters </code>内部，应避免直接访问实例变量。更多有关在初始化方法和 <code>dealloc</code> 方法中使用访问器方法的信息，参见<a target="_blank" rel="noopener" href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/MemoryMgmt/Articles/mmPractical.html#//apple_ref/doc/uid/TP40004447-SW6">这里</a>。</p>
+<h5 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h5><p>变量名应该尽可能命名为描述性的。除了 <code>for() </code>循环外，其他情况都应该避免使用单字母的变量名。 星号表示指针属于变量，例如：<code>NSString *text </code>不要写成 <code>NSString* text </code>或者 <code>NSString * text</code> ，常量除外。 尽量定义属性来代替直接使用实例变量。除了初始化方法<code>（init， initWithCoder:，等）</code>， <code>dealloc</code> 方法和自定义的 <code>setters </code>和 <code>getters </code>内部，应避免直接访问实例变量。更多有关在初始化方法和 <code>dealloc</code> 方法中使用访问器方法的信息，参见<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2xpYnJhcnkvbWFjL2RvY3VtZW50YXRpb24vQ29jb2EvQ29uY2VwdHVhbC9NZW1vcnlNZ210L0FydGljbGVzL21tUHJhY3RpY2FsLmh0bWwjLy9hcHBsZV9yZWYvZG9jL3VpZC9UUDQwMDA0NDQ3LVNXNg==">这里<i class="fa fa-external-link-alt"></i></span>。</p>
 <p>推荐：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@interface NYTSection: NSObject</span><br><span class="line">@property (nonatomic) NSString *headline;</span><br><span class="line">@end</span><br></pre></td></tr></table></figure>
 
@@ -503,7 +503,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">@interface NYTSection : NSObject &#123;</span><br><span class="line">    NSString *headline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h6 id="变量限定符"><a href="#变量限定符" class="headerlink" title="变量限定符"></a>变量限定符</h6><p>当涉及到在 ARC 中被引入变量限定符时， 限定符 (__strong, __weak, __unsafe_unretained, __autoreleasing) 应该位于星号和变量名之间，如：NSString * __weak text。</p>
-<h5 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h5><p>尽可能遵守苹果的命名约定，尤其那些涉及到<a target="_blank" rel="noopener" href="https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/MemoryMgmt/Articles/MemoryMgmt.html">内存管理规则</a>，<a target="_blank" rel="noopener" href="http://stackoverflow.com/a/2865194/340508">NARC</a>的。</p>
+<h5 id="命名"><a href="#命名" class="headerlink" title="命名"></a>命名</h5><p>尽可能遵守苹果的命名约定，尤其那些涉及到<span class="exturl" data-url="aHR0cHM6Ly9kZXZlbG9wZXIuYXBwbGUuY29tL2xpYnJhcnkvbWFjLyNkb2N1bWVudGF0aW9uL0NvY29hL0NvbmNlcHR1YWwvTWVtb3J5TWdtdC9BcnRpY2xlcy9NZW1vcnlNZ210Lmh0bWw=">内存管理规则<i class="fa fa-external-link-alt"></i></span>，<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMjg2NTE5NC8zNDA1MDg=">NARC<i class="fa fa-external-link-alt"></i></span>的。</p>
 <p>长的和描述性的方法名和变量名都不错。</p>
 <p>推荐：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">UIButton *settingsButton;</span><br></pre></td></tr></table></figure>
@@ -616,9 +616,9 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions&#123;</span><br><span class="line">    //TODO:增加初始化</span><br><span class="line">    return YES;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="更多规范"><a href="#更多规范" class="headerlink" title="更多规范"></a>更多规范</h4><ul>
-<li><a target="_blank" rel="noopener" href="https://github.com/roycms/IosCodeSpecification">切图规范</a></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3JveWNtcy9Jb3NDb2RlU3BlY2lmaWNhdGlvbg==">切图规范<i class="fa fa-external-link-alt"></i></span></li>
 </ul>
-<h4 id="转载"><a href="#转载" class="headerlink" title="转载"></a>转载</h4><p><a target="_blank" rel="noopener" href="https://github.com/iamlay/IosCodeSpecification">iOSCodeSpecification</a></p>
+<h4 id="转载"><a href="#转载" class="headerlink" title="转载"></a>转载</h4><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheS9Jb3NDb2RlU3BlY2lmaWNhdGlvbg==">iOSCodeSpecification<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -670,7 +670,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>

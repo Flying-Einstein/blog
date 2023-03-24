@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="学习任何一种语言，都有一个由表及里，由浅入深的过程。汇编是我们探究本质的终极大法，通过汇编，我们能从根本上了解现象背后的实质。本篇内容主要介绍了什么是汇编语言、寄存器及相关知识、汇编语言的一些简单指令、LLBD指令、并给出了一个简单的调试汇编的小例子。希望对iOS开发的同学有所帮助">
 <meta property="og:type" content="article">
@@ -190,10 +190,10 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/iamlay" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lhbWxheQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iamlay"><i class="fab fa-github fa-fw"></i>GitHub</span>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1187074543@qq.com" title="E-Mail → mailto:1187074543@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <span class="exturl" data-url="bWFpbHRvOjExODcwNzQ1NDNAcXEuY29t" title="E-Mail → mailto:1187074543@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</span>
       </span>
   </div>
 
@@ -627,7 +627,7 @@
 
 <p>这样就可以跳转到函数结束后的下一条指令 “movl %eax, -4(%rbp)”处继续执行,至此我们看一下完整调用过程中栈的变化：</p>
 <p><img src="/Assembly06.png" alt="image"></p>
-<p>更多关于寄存器的知识可以看<a target="_blank" rel="noopener" href="https://nifengz.com/introduction_x64_assembly/">这篇博客</a>,讲的更加详细</p>
+<p>更多关于寄存器的知识可以看<span class="exturl" data-url="aHR0cHM6Ly9uaWZlbmd6LmNvbS9pbnRyb2R1Y3Rpb25feDY0X2Fzc2VtYmx5Lw==">这篇博客<i class="fa fa-external-link-alt"></i></span>,讲的更加详细</p>
 <h4 id="Part05-LLDB常用指令"><a href="#Part05-LLDB常用指令" class="headerlink" title="Part05 - LLDB常用指令"></a>Part05 - LLDB常用指令</h4><p>了解了汇编的基本指令时候，我们需要再了解在Xcode中如何使用LLDB指令来调试汇编代码</p>
 <ul>
 <li>读取寄存器的值</li>
@@ -689,11 +689,11 @@
 <p>3.在<code>main</code>函数中，调用<code>sum</code>函数，在调用<code>sum</code>函数地方打断点</p>
 <p><img src="/Assembly08.png" alt="image"></p>
 <p>4.通过在控制台执行 <code>n</code>指令，可以定位到第11行,执行<code>si</code>指令可以进入<code>sum</code>函数，在<code>sum</code>函数中，我们可以看到最终通过<code>%rdx</code>和<code>%rcx</code>完成累加，并最终将值放如<code>%rax</code>寄存器，作为函数返回值<br><img src="/Assembly09.png" alt="image"></p>
-<h4 id="Part07-参考"><a href="#Part07-参考" class="headerlink" title="Part07 - 参考"></a>Part07 - 参考</h4><p><a target="_blank" rel="noopener" href="https://nifengz.com/introduction_x64_assembly/">x86-64汇编入门
-</a></p>
-<p><a target="_blank" rel="noopener" href="https://hanleylee.com/compile-of-ios-project.html">iOS 之编译</a></p>
-<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/27339191">x86-64 下函数调用及栈帧原理</a></p>
-<p><a target="_blank" rel="noopener" href="https://juejin.im/post/5ddf66385188256e855b6e0c">从 简单汇编基础 到 Swift 不简单的 a + 1</a></p>
+<h4 id="Part07-参考"><a href="#Part07-参考" class="headerlink" title="Part07 - 参考"></a>Part07 - 参考</h4><p><span class="exturl" data-url="aHR0cHM6Ly9uaWZlbmd6LmNvbS9pbnRyb2R1Y3Rpb25feDY0X2Fzc2VtYmx5Lw==">x86-64汇编入门
+<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9oYW5sZXlsZWUuY29tL2NvbXBpbGUtb2YtaW9zLXByb2plY3QuaHRtbA==">iOS 之编译<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNzMzOTE5MQ==">x86-64 下函数调用及栈帧原理<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9qdWVqaW4uaW0vcG9zdC81ZGRmNjYzODUxODgyNTZlODU1YjZlMGM=">从 简单汇编基础 到 Swift 不简单的 a + 1<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -745,7 +745,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder">Ray</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  <div class="powered-by">由 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span> 强力驱动
   </div>
 
     </div>
