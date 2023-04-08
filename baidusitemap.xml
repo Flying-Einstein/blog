@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iamlay.com/post/DeployChatGPT/</loc>
+    <lastmod>2023-04-08</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/PDFFindGuide/</loc>
+    <lastmod>2023-04-08</lastmod>
+  </url>
+  <url>
     <loc>http://iamlay.com/post/VPN/</loc>
     <lastmod>2023-04-02</lastmod>
   </url>
@@ -15,14 +23,6 @@
   <url>
     <loc>http://iamlay.com/post/EBookFind/</loc>
     <lastmod>2023-04-01</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/PDFFindGuide/</loc>
-    <lastmod>2023-04-01</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/DeployChatGPT/</loc>
-    <lastmod>2023-03-29</lastmod>
   </url>
   <url>
     <loc>http://iamlay.com/post/HexoGoogleAnalytics/</loc>
