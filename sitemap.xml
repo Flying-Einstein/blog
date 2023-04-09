@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://iamlay.com/post/ChatGPTPlus/</loc>
+    <loc>http://iamlay.com/post/DeployChatGPT/</loc>
     
     <lastmod>2023-04-09</lastmod>
     
@@ -11,9 +11,18 @@
   </url>
   
   <url>
-    <loc>http://iamlay.com/post/DeployChatGPT/</loc>
+    <loc>http://iamlay.com/post/GPTRegister/</loc>
     
-    <lastmod>2023-04-08</lastmod>
+    <lastmod>2023-04-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://iamlay.com/post/ChatGPTPlus/</loc>
+    
+    <lastmod>2023-04-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -57,15 +66,6 @@
   
   <url>
     <loc>http://iamlay.com/vpn/VPN.html</loc>
-    
-    <lastmod>2023-04-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamlay.com/post/GPTRegister/</loc>
     
     <lastmod>2023-04-02</lastmod>
     
@@ -324,14 +324,14 @@
   </url>
   
   <url>
-    <loc>http://iamlay.com/tags/%E8%BD%AC%E8%BD%BD/</loc>
+    <loc>http://iamlay.com/tags/ChatGPT/</loc>
     <lastmod>2023-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://iamlay.com/tags/ChatGPT/</loc>
+    <loc>http://iamlay.com/tags/%E8%BD%AC%E8%BD%BD/</loc>
     <lastmod>2023-04-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
