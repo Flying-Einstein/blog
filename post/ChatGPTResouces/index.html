@@ -24,28 +24,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iamlay.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"gitalk","storage":true,"lazyload":false,"nav":{"gitalk":{"ordcer":-1}},"activeClass":"gitalk"},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="转载  cocoapods管理的三方库之间有时候存在依赖关系，Podfile.lock藏满了各个版本库的版本号信息和彼此的依赖关系。  网页可视化导出-cocoapods-graph终端安装插件： 1sudo pip install cocoapods-graph">
+    <meta name="description" content="最近在进行人工智能相关的知识学习，也搜集了不少相关的资料，其中有视频、书籍、行业报告、也有一些开源的代码库。拿出来分享给需要的同学，希望对大家有帮助。整理资料不易，如果您觉得对您有帮助，欢迎点击底部打赏按钮~">
 <meta property="og:type" content="article">
-<meta property="og:title" content="cocoapods依赖关系可视化">
-<meta property="og:url" content="http://iamlay.com/post/cocoapodsVisual/index.html">
+<meta property="og:title" content="ChatGPT学习资源-持续更新">
+<meta property="og:url" content="http://iamlay.com/post/ChatGPTResouces/index.html">
 <meta property="og:site_name" content="以技术之名">
-<meta property="og:description" content="转载  cocoapods管理的三方库之间有时候存在依赖关系，Podfile.lock藏满了各个版本库的版本号信息和彼此的依赖关系。  网页可视化导出-cocoapods-graph终端安装插件： 1sudo pip install cocoapods-graph">
+<meta property="og:description" content="最近在进行人工智能相关的知识学习，也搜集了不少相关的资料，其中有视频、书籍、行业报告、也有一些开源的代码库。拿出来分享给需要的同学，希望对大家有帮助。整理资料不易，如果您觉得对您有帮助，欢迎点击底部打赏按钮~">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-03-21T08:16:20.000Z">
-<meta property="article:modified_time" content="2020-03-21T09:52:44.000Z">
+<meta property="article:published_time" content="2023-04-21T03:58:40.000Z">
+<meta property="article:modified_time" content="2023-04-21T04:07:42.420Z">
 <meta property="article:author" content="Ray">
-<meta property="article:tag" content="转载">
+<meta property="article:tag" content="ChatGPT">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://iamlay.com/post/cocoapodsVisual/">
+<link rel="canonical" href="http://iamlay.com/post/ChatGPTResouces/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://iamlay.com/post/cocoapodsVisual/","path":"post/cocoapodsVisual/","title":"cocoapods依赖关系可视化"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://iamlay.com/post/ChatGPTResouces/","path":"post/ChatGPTResouces/","title":"ChatGPT学习资源-持续更新"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>cocoapods依赖关系可视化 | 以技术之名</title>
+<title>ChatGPT学习资源-持续更新 | 以技术之名</title>
   
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-170943611-2"></script>
   <script class="next-config" data-name="google_analytics" type="application/json">{"tracking_id":"UA-170943611-2","only_pageview":false}</script>
@@ -154,7 +154,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BD%91%E9%A1%B5%E5%8F%AF%E8%A7%86%E5%8C%96%E5%AF%BC%E5%87%BA-cocoapods-graph"><span class="nav-number">1.</span> <span class="nav-text">网页可视化导出-cocoapods-graph</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E5%8F%AF%E8%A7%86%E5%8C%96%E5%AF%BC%E5%87%BA"><span class="nav-number">2.</span> <span class="nav-text">图片可视化导出</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80-%E8%A7%86%E9%A2%91"><span class="nav-number">1.</span> <span class="nav-text">一: 视频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C-%E4%B9%A6%E7%B1%8D"><span class="nav-number">2.</span> <span class="nav-text">二: 书籍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89-%E4%BB%A3%E7%A0%81%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">三: 代码类</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1%E3%80%81Auto-GPT"><span class="nav-number">3.1.</span> <span class="nav-text">1、Auto-GPT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2%E3%80%81Agent-GPT"><span class="nav-number">3.2.</span> <span class="nav-text">2、Agent-GPT</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3%E3%80%81DeepSpeed-Chat"><span class="nav-number">3.3.</span> <span class="nav-text">3、DeepSpeed Chat</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B-%E5%BA%94%E7%94%A8%E7%B1%BB"><span class="nav-number">4.</span> <span class="nav-text">四: 应用类</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -223,7 +223,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://iamlay.com/post/cocoapodsVisual/">
+    <link itemprop="mainEntityOfPage" href="http://iamlay.com/post/ChatGPTResouces/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -236,12 +236,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="cocoapods依赖关系可视化 | 以技术之名">
+      <meta itemprop="name" content="ChatGPT学习资源-持续更新 | 以技术之名">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          cocoapods依赖关系可视化
+          ChatGPT学习资源-持续更新
         </h1>
 
         <div class="post-meta-container">
@@ -251,15 +251,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2019-03-21 16:16:20" itemprop="dateCreated datePublished" datetime="2019-03-21T16:16:20+08:00">2019-03-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2020-03-21 17:52:44" itemprop="dateModified" datetime="2020-03-21T17:52:44+08:00">2020-03-21</time>
+      <time title="创建时间：2023-04-21 11:58:40 / 修改时间：12:07:42" itemprop="dateCreated datePublished" datetime="2023-04-21T11:58:40+08:00">2023-04-21</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -267,12 +261,12 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
+          <a href="/categories/AI/" itemprop="url" rel="index"><span itemprop="name">AI</span></a>
         </span>
     </span>
 
   
-    <span id="/post/cocoapodsVisual/" class="post-meta-item leancloud_visitors" data-flag-title="cocoapods依赖关系可视化" title="阅读次数">
+    <span id="/post/ChatGPTResouces/" class="post-meta-item leancloud_visitors" data-flag-title="ChatGPT学习资源-持续更新" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
@@ -289,25 +283,46 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><span class="exturl" data-url="aHR0cHM6Ly93d3cud2VpY2hhby5yZW4vaW9zLzIwMTgvMTIvMjcvY29jb2Fwb2RzLWdyYXBoLw==">转载<i class="fa fa-external-link-alt"></i></span></p>
-<blockquote>
-<p>cocoapods管理的三方库之间有时候存在依赖关系，Podfile.lock藏满了各个版本库的版本号信息和彼此的依赖关系。</p>
+        <blockquote>
+<p>最近在进行人工智能相关的知识学习，也搜集了不少相关的资料，其中有视频、书籍、行业报告、也有一些开源的代码库。拿出来分享给需要的同学，希望对大家有帮助。<br>整理资料不易，如果您觉得对您有帮助，欢迎点击底部打赏按钮~ </p>
 </blockquote>
-<h3 id="网页可视化导出-cocoapods-graph"><a href="#网页可视化导出-cocoapods-graph" class="headerlink" title="网页可视化导出-cocoapods-graph"></a>网页可视化导出-cocoapods-graph</h3><p>终端安装插件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip install cocoapods-graph</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<p>使用方式</p>
-<p>进入到工程的根目录，执行:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cocoapods-graph -f Podfile.lock --html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<h3 id="图片可视化导出"><a href="#图片可视化导出" class="headerlink" title="图片可视化导出"></a>图片可视化导出</h3><p>终端安装插件:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install cocoapods-dependencies</span><br><span class="line">brew install graphviz</span><br></pre></td></tr></table></figure>
-<p>使用方式:<br>进入到工程的根目录，执行:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pod dependencies [PODSPEC] [--graphviz] [--image]</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="一-视频"><a href="#一-视频" class="headerlink" title="一: 视频"></a>一: 视频</h2><p>1、<strong><strong>【渐构】万字科普GPT4为何会颠覆现有工作流；为何你要关注微软Copilot、文心一言等大模型</strong></strong></p>
+<blockquote>
+<p>介绍: 面向大众的科普视频， 抛开了技术概念，以通俗易懂的方式讲述了ChatGPT的背后的实现原理，以及如何通过三个阶段的训练一步步进化到现在这种能力。也讲了对行业和社会的冲击，以及我们应该如何应对，质量非常高的一视频。</p>
+</blockquote>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+    <iframe src="//player.bilibili.com/player.html?aid=653520954&bvid=BV1MY4y1R7EN&cid=1054910356&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position:absolute; height: 100%; width: 100%;"> </iframe>
+</div>
 
-<p>Use the –graphviz option to generate .gv or Podfile.gv containing the dependency graph in graphviz format.</p>
-<p>Use the –image option to generate .png or Podfile.png containing a rendering of the dependency graph.</p>
-<p>[!] Note that for either graphviz or image output, GraphViz must be installed and dot must be accessible via $PATH.</p>
+<h2 id="二-书籍"><a href="#二-书籍" class="headerlink" title="二: 书籍"></a>二: 书籍</h2><ol>
+<li>AI <strong>未来进行式</strong></li>
+</ol>
+<blockquote>
+<p>书中10个引人入胜的短篇故事，展示了一系列未来场景一一身临其境的沉浸式娱乐方式、自如使用人类语言的虚拟伴侣、没有“司机”的完全自动驾驶汽车、能够以假乱真的照片和视频，以及基于量子计算、计算机视觉和其他 AI 技术的展开应用。这本书用通俗易懂的方式介绍了人工智能用到的一些底层技术：比如什么是深度学习、什么是NLP、什么是计算机视觉,非常适合大家一起读一读.</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly93ZXJlYWQucXEuY29tL3dlYi9yZWFkZXIvMGJjMzJiMjA4MTNhYjZkOWZnMDExNGMx">AI未来进行式（李开复陈楸帆新书）-李开复 陈楸帆-微信读书<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="三-代码类"><a href="#三-代码类" class="headerlink" title="三: 代码类"></a>三: 代码类</h2><h3 id="1、Auto-GPT"><a href="#1、Auto-GPT" class="headerlink" title="1、Auto-GPT"></a>1、Auto-GPT</h3><blockquote>
+<p>AutoGPT是基于GPT-4的开源应用项目，能够根据用户需求，在用户完全不插手的情况下自主执行任务。你可以把一项任务交给它，让它自主地提出一个计划，然后执行计划。此外其还具有互联网访问、长期和短期内存管理、用于文本生成的 GPT-4 实例以及使用 GPT-3.5 进行文件存储和生成摘要等功能。AutoGPT 用处很多，可用来分析市场并提出交易策略、提供客户服务、进行营销等其他需要持续更新的任务。</p>
+</blockquote>
+<p>配置比较复杂，对非程序员用户不是特别的友好。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2thcWlqaWFuZy9BdXRvLUdQVC1aSA==">https://github.com/kaqijiang/Auto-GPT-ZH<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="2、Agent-GPT"><a href="#2、Agent-GPT" class="headerlink" title="2、Agent-GPT"></a>2、Agent-GPT</h3><blockquote>
+<p><strong>AgentGPT</strong>是一个部署好的网页web版AutoGPT，相当于网页版AutoGPT，不需要自己配置环境，直接使用就可以。当然Agent-GPT的源码是开源的，也支撑私有部署。</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9hZ2VudGdwdC5yZXdvcmtkLmFpLw==">AgentGPT 🤖<i class="fa fa-external-link-alt"></i></span></p>
+<h3 id="3、DeepSpeed-Chat"><a href="#3、DeepSpeed-Chat" class="headerlink" title="3、DeepSpeed Chat"></a>3、<span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MjEzNzk2NDY=">DeepSpeed Chat<i class="fa fa-external-link-alt"></i></span></h3><blockquote>
+<p>这是一个免费的开源深度学习解决方案和框架，专为使用 RLHF 训练高质量 ChatGPT 风格模型而设计。它简单（一键操作）、快速且成本极低，适用于各种客户，包括学校科研、初创公司和大规模云训练。相较于 <span class="exturl" data-url="aHR0cHM6Ly9zby5jc2RuLm5ldC9zby9zZWFyY2g/cT1Tb1RBJnNwbT0xMDAxLjIxMDEuMzAwMS43MDIw">SoTA<i class="fa fa-external-link-alt"></i></span>，它的速度提升了15倍，可以在单个 GPU 上训练 10B+ 的模型大小，以及在多 GPU 系统上训练 100B+ 的模型大小。</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC9EZWVwU3BlZWQvYmxvYi9tYXN0ZXIvYmxvZ3MvZGVlcHNwZWVkLWNoYXQvY2hpbmVzZS9SRUFETUUubWQ=">DeepSpeed&#x2F;README.md at master · microsoft&#x2F;DeepSpeed<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="四-应用类"><a href="#四-应用类" class="headerlink" title="四: 应用类"></a>四: 应用类</h2><ol>
+<li>ChatGPT中文调教指南</li>
+</ol>
+<blockquote>
+<p>可以参考让ChatGPT充当不同角色的时候，如何写prompts</p>
+</blockquote>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL1BsZXhQdC9hd2Vzb21lLWNoYXRncHQtcHJvbXB0cy16aA==">https://github.com/PlexPt/awesome-chatgpt-prompts-zh<i class="fa fa-external-link-alt"></i></span></p>
 
     </div>
 
@@ -331,21 +346,18 @@
 </div>
 
           <div class="post-tags">
-              <a href="/tags/%E8%BD%AC%E8%BD%BD/" rel="tag"># 转载</a>
+              <a href="/tags/ChatGPT/" rel="tag"># ChatGPT</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/MakeCocoapods/" rel="prev" title="用Cocoapods制作属于自己的仓库">
-                  <i class="fa fa-chevron-left"></i> 用Cocoapods制作属于自己的仓库
+                <a href="/post/ChatGPTPlus/" rel="prev" title="ChatGPT Plus 会员开通保姆级教程">
+                  <i class="fa fa-chevron-left"></i> ChatGPT Plus 会员开通保姆级教程
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/post/Encrypt/" rel="next" title="iOS，一行代码进行RSA、DES 、AES、MD5加密、解密">
-                  iOS，一行代码进行RSA、DES 、AES、MD5加密、解密 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
@@ -400,7 +412,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.css" integrity="sha256-AJnUHL7dBv6PGaeyPQJcgQPDjt/Hn/PvYZde1iqfp8U=" crossorigin="anonymous">
 
-<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"iamlay","repo":"gitalk","client_id":"798848f6f91162435156","client_secret":"d9b621213c7353cfa8b2286491f877ef4507da1e","admin_user":"iamlay","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"a0699c7fb52a4b76e98e9bae5156b295"}</script>
+<script class="next-config" data-name="gitalk" type="application/json">{"enable":true,"github_id":"iamlay","repo":"gitalk","client_id":"798848f6f91162435156","client_secret":"d9b621213c7353cfa8b2286491f877ef4507da1e","admin_user":"iamlay","distraction_free_mode":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token","language":"zh-CN","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/gitalk/1.8.0/gitalk.min.js","integrity":"sha256-MVK9MGD/XJaGyIghSVrONSnoXoGh3IFxLw0zfvzpxR4="},"path_md5":"cdce2ebe3da3ba450fcbe38f080d9b42"}</script>
 <script src="/js/third-party/comments/gitalk.js"></script>
 
 </body>
