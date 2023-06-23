@@ -1,3 +1,5 @@
+http://iamlay.com/post/Jenkins/
+http://iamlay.com/post/HexoGoogleAnalytics/
 http://iamlay.com/post/MacRecommannd/
 http://iamlay.com/post/EBookFind/
 http://iamlay.com/post/PDFFindGuide/
@@ -11,11 +13,9 @@ http://iamlay.com/links/index.html
 http://iamlay.com/baidu_verify_codeva-i39B9yWqWH.html
 http://iamlay.com/vpn/VPN.html
 http://iamlay.com/google1fe81123061dfd47.html
-http://iamlay.com/post/HexoGoogleAnalytics/
 http://iamlay.com/post/HexoNextReadmore/
 http://iamlay.com/post/HexoNextTheme/
 http://iamlay.com/post/iOSCodeSpecification/
-http://iamlay.com/post/Jenkins/
 http://iamlay.com/post/MakeCocoapods/
 http://iamlay.com/post/OCCodeAnalysis/
 http://iamlay.com/post/OCSQLCipher/
@@ -42,6 +42,6 @@ http://iamlay.com/tags/ChatGPT/
 http://iamlay.com/tags/%E7%BF%BB%E8%AF%91/
 http://iamlay.com/categories/%E9%9A%8F%E7%AC%94/
 http://iamlay.com/categories/AI/
-http://iamlay.com/categories/iOS/
 http://iamlay.com/categories/%E5%91%A8%E6%8A%A5/
+http://iamlay.com/categories/iOS/
 http://iamlay.com/categories/%E7%BD%91%E7%AB%99/
