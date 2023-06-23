@@ -31,21 +31,21 @@
 <meta property="og:site_name" content="以技术之名">
 <meta property="og:description" content="学习任何一种语言，都有一个由表及里，由浅入深的过程。汇编是我们探究本质的终极大法，通过汇编，我们能从根本上了解现象背后的实质。本篇内容主要介绍了什么是汇编语言、寄存器及相关知识、汇编语言的一些简单指令、LLBD指令、并给出了一个简单的调试汇编的小例子。希望对iOS开发的同学有所帮助">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://iamlay.com/Assembly01.png">
-<meta property="og:image" content="http://iamlay.com/Assembly02.png">
-<meta property="og:image" content="http://iamlay.com/Assembly03.png">
-<meta property="og:image" content="http://iamlay.com/Assembly04.png">
-<meta property="og:image" content="http://iamlay.com/Assembly05.png">
-<meta property="og:image" content="http://iamlay.com/Assembly06.png">
-<meta property="og:image" content="http://iamlay.com/Assembly07.png">
-<meta property="og:image" content="http://iamlay.com/Assembly08.png">
-<meta property="og:image" content="http://iamlay.com/Assembly09.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly01.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly02.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly03.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly04.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly05.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly06.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly07.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly08.png">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly09.png">
 <meta property="article:published_time" content="2020-04-02T11:41:49.000Z">
-<meta property="article:modified_time" content="2023-03-22T05:30:05.667Z">
+<meta property="article:modified_time" content="2023-06-23T06:29:08.341Z">
 <meta property="article:author" content="Ray">
 <meta property="article:tag" content="原创">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://iamlay.com/Assembly01.png">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly01.png">
 
 
 <link rel="canonical" href="http://iamlay.com/post/week14/">
@@ -269,7 +269,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2023-03-22 13:30:05" itemprop="dateModified" datetime="2023-03-22T13:30:05+08:00">2023-03-22</time>
+      <time title="修改时间：2023-06-23 14:29:08" itemprop="dateModified" datetime="2023-06-23T14:29:08+08:00">2023-06-23</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -315,7 +315,7 @@
 </blockquote>
 <span id="more"></span>
 <p>用一张图来解释这三种语言之间的关系：</p>
-<p><img src="/Assembly01.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly01.png"></p>
 <h4 id="Part02-编译器：LLVM"><a href="#Part02-编译器：LLVM" class="headerlink" title="Part02 - 编译器：LLVM"></a>Part02 - 编译器：LLVM</h4><p>汇编严重依赖硬件设备, <code>iOS</code>模拟器使用<code>AT&amp;T</code>格式汇编(因为 <code>Mac</code> 是基于 <code>Unix</code> 开发的), <code>iOS</code> 真机使用ARM汇编<br>。</p>
 <p><code>Xcode</code>内置的编译器是<code>LLVM</code>，<code>LLVM</code> 是一个著名的编译器, 由大神 <code>Chris Lattner </code>开发, 可用于常规编译器, JIT编译器, 汇编器, 调试器, 静态分析工具等一系列跟编程语言相关的工作。</p>
 <h5 id="LLVM-的编译架构分为三个阶段"><a href="#LLVM-的编译架构分为三个阶段" class="headerlink" title="LLVM 的编译架构分为三个阶段"></a>LLVM 的编译架构分为三个阶段</h5><ol>
@@ -330,7 +330,7 @@
 <li>优化阶段是一个通用的阶段, 它针对的是统一的LLVM IR, 不论是支持新的编程语言, 还是支持新的硬件设备, 都不需要对优化阶段做修改</li>
 <li>LLVM现在被作为实现各种静态和运行时编译语言的通用基础结构(GCC家族, Java, .NET, Python, Ruby, Scheme, Haskell, D等)</li>
 </ol>
-<p><img src="/Assembly02.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly02.png"></p>
 <h4 id="Part03-汇编语言种类及选择："><a href="#Part03-汇编语言种类及选择：" class="headerlink" title="Part03 - 汇编语言种类及选择："></a>Part03 - 汇编语言种类及选择：</h4><h5 id="汇编语言种类"><a href="#汇编语言种类" class="headerlink" title="汇编语言种类"></a>汇编语言种类</h5><ol>
 <li><code> AT&amp;T</code>格式(<code>UNIX</code>, <code>MAC</code>阵营):<code>8086</code>汇编(16bit 架构)<code>x64</code>汇编(64bit 架构)</li>
 <li><code>Intel</code>格式(WIN阵营): <code>x86</code>汇编(32bit 架构)</li>
@@ -361,7 +361,8 @@
 </thead>
 </table>
 <p>因为早期处理器的不同寄存器的用途不同，并不是所有的指令都可以应用于每个寄存器。（现在基本上都是通用寄存器了）随着设计的发展，增加了新的指令和寻址模式，使各种寄存器几乎相等。除了几条特殊的指令，比如与字符串处理有关的指令，需要使用％rsi和％rdi，另外，还有两个寄存器保留用作堆栈指针（％rsp）和基址指针（％rbp）。最后的八个被编号的寄存器没有特别的限制。除此之外还有一个特殊的寄存器%rip(instruction pointer)，一般情况下你不需要关注这个寄存器,但是这个寄存器很重要，你需要知道他的功能，后面在说函数调用时会提及。</p>
-<p>多年来X86架构已经从8位扩展到了32位，因此每个寄存器都有一些内部结构如下图：<br><img src="/Assembly03.png" alt="image"></p>
+<p>多年来X86架构已经从8位扩展到了32位，因此每个寄存器都有一些内部结构如下图：</p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly03.png"></p>
 <h5 id="寻址模式"><a href="#寻址模式" class="headerlink" title="寻址模式"></a>寻址模式</h5><p>什么是寻址模式？就是数据在内存寄和寄存器之间进行移动时，取得数据地址的不同表达方式。最常用的寻址的汇编指令是mov。x86-64使用的是复杂指令集(cisc)，因此mov有许多不同的变体，可以在不同单元之间移动不同类型的据。mov与大多数指令一样，具有单字母后缀，用于确定要移动的数据量。下表用于描述各种大小的数据值：</p>
 <table>
 <thead>
@@ -617,12 +618,12 @@
 <p>需要注意以上的CALL指令等同于：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pushq %rip</span><br><span class="line">jmp sum</span><br></pre></td></tr></table></figure>
 <p>我们把<code>%rip</code>当前的内容放入栈中，以便函数<code>sum</code>调用结束我们可以知道接下来该执行哪条指令，我们假设栈从<code>0xC0000000</code>处开始向低处延伸。到这个阶段栈的变化过程如下所示：</p>
-<p><img src="/Assembly04.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly04.png"></p>
 <p>现在程序跳转到sum处执行计算：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">pushq   %rbp</span><br><span class="line">movq    %rsp, %rbp</span><br><span class="line">movl    %edi, -4(%rbp)</span><br><span class="line">movl    %esi, -8(%rbp)</span><br><span class="line">movl    -4(%rbp), %edx</span><br><span class="line">movl    -8(%rbp), %eax</span><br><span class="line">addl    %edx, %eax</span><br></pre></td></tr></table></figure>
 
 <p>和<code>main</code>函数被调用一样，<code>sum</code>函数被调用时，首先也是保存<code>%rbp</code>，然后更新栈指针<code>%rsp</code>，将两个参数拷贝到栈中进行使用。在这里你可能看到了和<code>main</code> 函数不一样的地方，局部变量保存在栈中并没有像main函数中那样引起<code>%rsp</code>的移动(对比<code>main</code>函数中的<code>SUBQ 16</code>)。是因为编译器知道sum中不会再调用其它函数，也就不用保存数据到栈中了，直接使用栈空间即可。所以就无需位移<code>%rsp</code>。计算完成后结果保存在<code>%eax</code>中，现在我们更新一下栈的变化：</p>
-<p><img src="/Assembly05.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly05.png"></p>
 <p>然后返回到main函数时执行了如下操作：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">popq    %rbp</span><br><span class="line">ret</span><br></pre></td></tr></table></figure>
 
@@ -630,7 +631,7 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">popq    %rip</span><br></pre></td></tr></table></figure>
 
 <p>这样就可以跳转到函数结束后的下一条指令 “movl %eax, -4(%rbp)”处继续执行,至此我们看一下完整调用过程中栈的变化：</p>
-<p><img src="/Assembly06.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly06.png"></p>
 <p>更多关于寄存器的知识可以看<span class="exturl" data-url="aHR0cHM6Ly9uaWZlbmd6LmNvbS9pbnRyb2R1Y3Rpb25feDY0X2Fzc2VtYmx5Lw==">这篇博客<i class="fa fa-external-link-alt"></i></span>,讲的更加详细</p>
 <h4 id="Part05-LLDB常用指令"><a href="#Part05-LLDB常用指令" class="headerlink" title="Part05 - LLDB常用指令"></a>Part05 - LLDB常用指令</h4><p>了解了汇编的基本指令时候，我们需要再了解在Xcode中如何使用LLDB指令来调试汇编代码</p>
 <ul>
@@ -689,10 +690,11 @@
 <ol start="2">
 <li><code>Xcode</code>进入汇编调试模式，并在<code>main</code>函数中调用<code>sum</code>函数</li>
 </ol>
-<p><img src="/Assembly07.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly07.png"></p>
 <p>3.在<code>main</code>函数中，调用<code>sum</code>函数，在调用<code>sum</code>函数地方打断点</p>
-<p><img src="/Assembly08.png" alt="image"></p>
-<p>4.通过在控制台执行 <code>n</code>指令，可以定位到第11行,执行<code>si</code>指令可以进入<code>sum</code>函数，在<code>sum</code>函数中，我们可以看到最终通过<code>%rdx</code>和<code>%rcx</code>完成累加，并最终将值放如<code>%rax</code>寄存器，作为函数返回值<br><img src="/Assembly09.png" alt="image"></p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly08.png"></p>
+<p>4.通过在控制台执行 <code>n</code>指令，可以定位到第11行,执行<code>si</code>指令可以进入<code>sum</code>函数，在<code>sum</code>函数中，我们可以看到最终通过<code>%rdx</code>和<code>%rcx</code>完成累加，并最终将值放如<code>%rax</code>寄存器，作为函数返回值</p>
+<p><img src="https://cdn.staticaly.com/gh/iamlay/BlogResources@main/imgs/week/Assembly09.png"></p>
 <h4 id="Part07-参考"><a href="#Part07-参考" class="headerlink" title="Part07 - 参考"></a>Part07 - 参考</h4><p><span class="exturl" data-url="aHR0cHM6Ly9uaWZlbmd6LmNvbS9pbnRyb2R1Y3Rpb25feDY0X2Fzc2VtYmx5Lw==">x86-64汇编入门
 <i class="fa fa-external-link-alt"></i></span></p>
 <p><span class="exturl" data-url="aHR0cHM6Ly9oYW5sZXlsZWUuY29tL2NvbXBpbGUtb2YtaW9zLXByb2plY3QuaHRtbA==">iOS 之编译<i class="fa fa-external-link-alt"></i></span></p>
