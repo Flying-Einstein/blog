@@ -1,3 +1,4 @@
+http://iamlay.com/post/ChatGPTResouces/
 http://iamlay.com/post/week15/
 http://iamlay.com/post/week14/
 http://iamlay.com/post/RSAEncryptFail/
@@ -11,7 +12,6 @@ http://iamlay.com/post/GPTRegister/
 http://iamlay.com/post/DeployChatGPT/
 http://iamlay.com/post/ChatGPTPlus/
 http://iamlay.com/post/CDN/
-http://iamlay.com/post/ChatGPTResouces/
 http://iamlay.com/chatgpt/index.html
 http://iamlay.com/links/index.html
 http://iamlay.com/baidu_verify_codeva-i39B9yWqWH.html
@@ -42,6 +42,6 @@ http://iamlay.com/tags/ChatGPT/
 http://iamlay.com/tags/%E7%BF%BB%E8%AF%91/
 http://iamlay.com/categories/%E9%9A%8F%E7%AC%94/
 http://iamlay.com/categories/AI/
-http://iamlay.com/categories/iOS/
 http://iamlay.com/categories/%E5%91%A8%E6%8A%A5/
+http://iamlay.com/categories/iOS/
 http://iamlay.com/categories/%E7%BD%91%E7%AB%99/
