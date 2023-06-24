@@ -1,3 +1,4 @@
+http://iamlay.com/post/Umami/
 http://iamlay.com/post/AzureGPT/
 http://iamlay.com/post/ChatGPTResouces/
 http://iamlay.com/post/week15/
@@ -46,3 +47,4 @@ http://iamlay.com/categories/AI/
 http://iamlay.com/categories/%E5%91%A8%E6%8A%A5/
 http://iamlay.com/categories/iOS/
 http://iamlay.com/categories/%E7%BD%91%E7%AB%99/
+http://iamlay.com/categories/Hexo/
