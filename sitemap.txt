@@ -1,3 +1,4 @@
+http://iamlay.com/post/GPTRegister/
 http://iamlay.com/post/Fine-Turning/
 http://iamlay.com/post/timeManager/
 http://iamlay.com/post/Universallink/
@@ -13,7 +14,6 @@ http://iamlay.com/post/HexoGoogleAnalytics/
 http://iamlay.com/post/MacRecommannd/
 http://iamlay.com/post/EBookFind/
 http://iamlay.com/post/PDFFindGuide/
-http://iamlay.com/post/GPTRegister/
 http://iamlay.com/post/DeployChatGPT/
 http://iamlay.com/post/ChatGPTPlus/
 http://iamlay.com/post/CDN/
