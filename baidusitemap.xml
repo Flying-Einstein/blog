@@ -1,6 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iamlay.com/post/week15/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/week14/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/Universallink/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/Umami/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/RSAEncryptFail/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/PDFFindGuide/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/OCSQLCipher/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/OCCodeAnalysis/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/MacRecommannd/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/Jenkins/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/HexoGoogleAnalytics/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/EBookFind/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/ChatGPTPlus/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
+    <loc>http://iamlay.com/post/AzureGPT/</loc>
+    <lastmod>2023-11-10</lastmod>
+  </url>
+  <url>
     <loc>http://iamlay.com/post/DeployChatGPT/</loc>
     <lastmod>2023-11-10</lastmod>
   </url>
@@ -25,59 +81,7 @@
     <lastmod>2023-07-12</lastmod>
   </url>
   <url>
-    <loc>http://iamlay.com/post/Universallink/</loc>
-    <lastmod>2023-06-26</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/Umami/</loc>
-    <lastmod>2023-06-24</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/AzureGPT/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
     <loc>http://iamlay.com/post/ChatGPTResouces/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/week15/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/week14/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/RSAEncryptFail/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/OCCodeAnalysis/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/Jenkins/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/HexoGoogleAnalytics/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/MacRecommannd/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/EBookFind/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/PDFFindGuide/</loc>
-    <lastmod>2023-06-23</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/ChatGPTPlus/</loc>
     <lastmod>2023-06-23</lastmod>
   </url>
   <url>
@@ -98,10 +102,6 @@
   </url>
   <url>
     <loc>http://iamlay.com/post/MakeCocoapods/</loc>
-    <lastmod>2023-03-22</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/OCSQLCipher/</loc>
     <lastmod>2023-03-22</lastmod>
   </url>
   <url>
