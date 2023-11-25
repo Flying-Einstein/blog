@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://iamlay.com/post/MacOSReinstall/</loc>
+    <lastmod>2023-11-25</lastmod>
+  </url>
+  <url>
     <loc>http://iamlay.com/post/week15/</loc>
     <lastmod>2023-11-10</lastmod>
   </url>
@@ -59,10 +63,6 @@
   <url>
     <loc>http://iamlay.com/post/DeployChatGPT/</loc>
     <lastmod>2023-11-10</lastmod>
-  </url>
-  <url>
-    <loc>http://iamlay.com/post/MacOSReinstall/</loc>
-    <lastmod>2023-11-03</lastmod>
   </url>
   <url>
     <loc>http://iamlay.com/post/CDN/</loc>

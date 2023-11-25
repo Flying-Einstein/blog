@@ -1,3 +1,4 @@
+http://iamlay.com/post/MacOSReinstall/
 http://iamlay.com/post/week15/
 http://iamlay.com/post/week14/
 http://iamlay.com/post/Universallink/
@@ -13,7 +14,6 @@ http://iamlay.com/post/EBookFind/
 http://iamlay.com/post/ChatGPTPlus/
 http://iamlay.com/post/AzureGPT/
 http://iamlay.com/post/DeployChatGPT/
-http://iamlay.com/post/MacOSReinstall/
 http://iamlay.com/post/CDN/
 http://iamlay.com/post/GPTRegister/
 http://iamlay.com/post/Fine-Turning/
