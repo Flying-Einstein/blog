@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://iamlay.com/baidu_verify_codeva-kK9kRoKcsH.html</loc>
+    
+    <lastmod>2024-08-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://iamlay.com/post/GPTRegister/</loc>
     
     <lastmod>2024-03-11</lastmod>
@@ -481,6 +490,13 @@
   </url>
   
   <url>
+    <loc>http://iamlay.com/categories/HarmonyOS/</loc>
+    <lastmod>2024-08-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://iamlay.com/categories/%E5%91%A8%E6%8A%A5/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -489,13 +505,6 @@
   
   <url>
     <loc>http://iamlay.com/categories/iOS/</loc>
-    <lastmod>2024-08-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://iamlay.com/categories/HarmonyOS/</loc>
     <lastmod>2024-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
